@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 dotenv.config({ path: ".env" });
 
 const web3 = new Web3("http://127.0.0.1:7545"); // Ganache를 사용합니다.
-const privateKey = process.env.PRIVATE_KEY || "";
+const privateKey = process.env.PRIVATE_KEY_GANACHE || "";
 
 export const getChainId = async () => {
   return web3.eth.net.getId();

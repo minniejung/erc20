@@ -10,7 +10,8 @@ const config: HardhatUserConfig = {
       // url: "HTTP://127.0.0.1:7545", // Todo: Ganache RPC URL
       url: "https://public-en-kairos.node.kaia.io",
       accounts: [
-        process.env.PRIVATE_KEY || "", // Todo: Ganache에서 제공하는 프라이빗 키 사용(.env 파일을 사용합니다)
+        // process.env.PRIVATE_KEY_GANACHE || "", // Todo: Ganache에서 제공하는 프라이빗 키 사용(.env 파일을 사용합니다)
+        process.env.PRIVATE_KEY_METAMASK || "",
       ],
     },
   },
